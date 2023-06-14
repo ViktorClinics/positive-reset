@@ -13,58 +13,43 @@ export const WrapperHeader = styled(Box)(() => {
   };
 });
 
-export const Container = styled("main")(() => {
+export const Title = styled("h2")(() => {
   return {
-    width: "100%",
-    maxWidth: 1300,
-    margin: "0 auto 60px",
+    display: "flex",
+    color: "#3498db",
+    fontSize: 26,
+    margin: 0,
   };
 });
 
-export const Post = styled(Box)(() => {
+export const Wrapper = styled(Box)(() => {
+  return {
+    width: "100%",
+    maxWidth: 1300,
+    margin: "35px auto 35px",
+  };
+});
+
+export const Block = styled(Box)(() => {
   return {
     display: "flex",
     justifyContent: "space-between",
-    marginTop: 45,
+    margin: "35px 0 30px",
 
-    "@media (max-width: 1070px)": {
+    "@media (max-width: 1090px)": {
       flexDirection: "column",
       alignItems: "center",
     },
   };
 });
 
-export const Title = styled("h2")(() => {
+export const WrapperBlock = styled(Box)(() => {
   return {
     display: "flex",
+    flexDirection: "column",
     justifyContent: "center",
-    color: "#3498db",
-    margin: 0,
-    fontSize: 26,
-  };
-});
-
-export const Img = styled("img")(() => {
-  return {
     width: "100%",
-    maxWidth: 625,
-  };
-});
-
-export const Info = styled(Box)(() => {
-  return {
-    width: "100%",
-    maxWidth: 600,
-  };
-});
-
-export const UnderText = styled(Box)(() => {
-  return {
-    "@media (max-width: 1070px)": {
-      width: "100%",
-      maxWidth: 600,
-      margin: "0 auto",
-    },
+    maxWidth: 650,
   };
 });
 
@@ -74,4 +59,11 @@ export const Text = styled("p")(() => {
     lineHeight: "26px",
     color: "#959595",
   };
+});
+
+export const Li = styled("li")({
+  color: "#959595",
+  fontSize: 18,
+  lineHeight: "26px",
+  paddingTop: 10,
 });

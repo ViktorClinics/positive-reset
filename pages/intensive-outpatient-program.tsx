@@ -50,7 +50,14 @@ const IntensiveOutpatientProgram = () => {
       </WrapperHeader>
       <Container>
         <Post>
-          <Box sx={{ width: 535, height: 356 }}>
+          <Box
+            sx={{
+              width: "100%",
+              height: "100%",
+              maxWidth: 535,
+              maxHeight: 356,
+            }}
+          >
             <Image
               id="image"
               src={IMGOne}
@@ -136,7 +143,14 @@ const IntensiveOutpatientProgram = () => {
           <WrapperBlock>
             <IOProgram />
           </WrapperBlock>
-          <Box sx={{ width: 535, height: 356 }}>
+          <Box
+            sx={{
+              width: "100%",
+              height: "100%",
+              maxWidth: 535,
+              maxHeight: 356,
+            }}
+          >
             <Image id="image" src={IMGTwo} alt="Logo" title="Logo" />
           </Box>
         </Post>

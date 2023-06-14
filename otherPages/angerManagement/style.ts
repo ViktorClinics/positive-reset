@@ -41,6 +41,7 @@ export const Block = styled(Box)(() => {
   return {
     display: "flex",
     justifyContent: "space-between",
+    margin: "35px 0",
 
     "@media (max-width: 1090px)": {
       flexDirection: "column",
@@ -52,7 +53,7 @@ export const Block = styled(Box)(() => {
 export const WrapperBlock = styled(Box)(() => {
   return {
     width: "100%",
-    maxWidth: 650,
+    maxWidth: 620,
   };
 });
 
@@ -73,21 +74,6 @@ export const Text = styled("p")(() => {
   };
 });
 
-export const Poster = styled(Box)({
-  width: "100%",
-  maxWidth: 800,
-  margin: "35px auto",
-  background: "#f5f5f5",
-});
-
-export const TitlePoster = styled("h2")({
-  color: "#373737",
-});
-
-export const Ul = styled("ul")({
-  paddingLeft: 20,
-});
-
 export const Li = styled("li")({
   fontSize: 16,
   lineHeight: "26px",
@@ -95,6 +81,9 @@ export const Li = styled("li")({
   paddingTop: 10,
 });
 
-export const WrapperPoster = styled(Box)({
-  padding: 30,
+export const TextBlue = styled("p")({
+  fontSize: 25,
+  lineHeight: "34px",
+  color: "#3498db",
+  paddingTop: 10,
 });

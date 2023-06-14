@@ -1,5 +1,4 @@
 import {
-  Main,
   WrapperHeader,
   TitleHeader,
   Wrapper,
@@ -7,6 +6,7 @@ import {
   Text,
   Title,
   WrapperBlock,
+  Container,
 } from "../otherPages/outpatientMentalHealth/style";
 import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
 import IMGHeader from "../public/Outpatient-Mental-Health01а.jpg";
@@ -47,7 +47,7 @@ const OutpatientMentalHealth = () => {
         />
       </Head>
       <OtherHeader />
-      <Main>
+      <Container>
         <WrapperHeader
           style={{
             backgroundImage: `url(${IMGHeader.src})`,
@@ -57,7 +57,14 @@ const OutpatientMentalHealth = () => {
         </WrapperHeader>
         <Wrapper>
           <Block>
-            <Box sx={{ width: 535, height: 428 }}>
+            <Box
+              sx={{
+                width: "100%",
+                height: "100%",
+                maxWidth: 535,
+                maxHeight: 428,
+              }}
+            >
               <Image
                 id="image"
                 src={IMGOne}
@@ -96,7 +103,14 @@ const OutpatientMentalHealth = () => {
                 to moderate symptoms who have a strong support system at home.
               </Text>
             </WrapperBlock>
-            <Box sx={{ width: 536, height: 356 }}>
+            <Box
+              sx={{
+                width: "100%",
+                height: "100%",
+                maxWidth: 536,
+                maxHeight: 356,
+              }}
+            >
               <Image
                 id="image"
                 src={IMGTwo}
@@ -106,7 +120,14 @@ const OutpatientMentalHealth = () => {
             </Box>
           </Block>
           <Block>
-            <Box sx={{ width: 535, height: 356 }}>
+            <Box
+              sx={{
+                width: "100%",
+                height: "100%",
+                maxWidth: 535,
+                maxHeight: 356,
+              }}
+            >
               <Image
                 id="image"
                 src={IMGThree}
@@ -161,7 +182,14 @@ const OutpatientMentalHealth = () => {
                 benefit of being less expensive than residential programs.
               </Text>
             </WrapperBlock>
-            <Box sx={{ width: 535, height: 351 }}>
+            <Box
+              sx={{
+                width: "100%",
+                height: "100%",
+                maxWidth: 535,
+                maxHeight: 351,
+              }}
+            >
               <Image
                 id="image"
                 src={IMGFour}
@@ -182,7 +210,7 @@ const OutpatientMentalHealth = () => {
           </Text>
         </Wrapper>
         <Feedbacks />
-      </Main>
+      </Container>
     </>
   );
 };

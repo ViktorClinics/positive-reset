@@ -1,6 +1,6 @@
 import { Box, Tab } from "@mui/material";
 import { SyntheticEvent, useState } from "react";
-import { Container, Title, Text, MUITabs, Link, BoxText } from "./styled";
+import { Container, Title, Text, MUITabs, Link, BoxText } from "./style";
 
 interface TabPanelProps {
   children?: React.ReactNode;

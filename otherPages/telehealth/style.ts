@@ -1,9 +1,5 @@
 import { styled, Box } from "@mui/material";
 
-export const Container = styled(Box)(() => {
-  return {};
-});
-
 export const WrapperHeader = styled(Box)(() => {
   return {
     alignItems: "center",
@@ -17,7 +13,27 @@ export const WrapperHeader = styled(Box)(() => {
   };
 });
 
-export const TitleHeader = styled("h2")(() => {
+export const Container = styled("main")(() => {
+  return {
+    width: "100%",
+    maxWidth: 1300,
+    margin: "35px auto 60px",
+  };
+});
+
+export const Post = styled(Box)(() => {
+  return {
+    display: "flex",
+    justifyContent: "space-between",
+
+    "@media (max-width: 1070px)": {
+      flexDirection: "column",
+      alignItems: "center",
+    },
+  };
+});
+
+export const Title = styled("h2")(() => {
   return {
     display: "flex",
     justifyContent: "center",
@@ -27,46 +43,27 @@ export const TitleHeader = styled("h2")(() => {
   };
 });
 
-export const Wrapper = styled(Box)(() => {
-  return {
-    width: "100%",
-    maxWidth: 1300,
-    margin: "35px auto 35px",
-  };
-});
-
-export const Block = styled(Box)(() => {
-  return {
-    display: "flex",
-    justifyContent: "space-between",
-
-    "@media (max-width: 1090px)": {
-      flexDirection: "column",
-      alignItems: "center",
-    },
-  };
-});
-
 export const Img = styled("img")(() => {
   return {
     width: "100%",
-    maxWidth: 630,
+    maxWidth: 625,
   };
 });
 
-export const WrapperBlock = styled(Box)(() => {
+export const Info = styled(Box)(() => {
   return {
     width: "100%",
-    maxWidth: 620,
+    maxWidth: 600,
   };
 });
 
-export const Title = styled("h2")(() => {
+export const UnderText = styled(Box)(() => {
   return {
-    display: "flex",
-    color: "#3498db",
-    margin: 0,
-    fontSize: 26,
+    "@media (max-width: 1070px)": {
+      width: "100%",
+      maxWidth: 600,
+      margin: "0 auto",
+    },
   };
 });
 

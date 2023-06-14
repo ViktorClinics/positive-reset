@@ -7,7 +7,7 @@ import {
   WrapperBlock,
   Button,
   Iframe,
-} from "../otherPages/career/styled";
+} from "../otherPages/career/style";
 import { PersonalForm } from "../otherPages/career/PersonalForm/PersonalForm";
 import CareerOpportunitiesInfo from "../components/CareerOpportunitiesInfo";
 import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";

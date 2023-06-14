@@ -4,7 +4,7 @@ export const Container = styled("main")(() => {
   return {
     width: "100%",
     maxWidth: 1300,
-    margin: "0 auto 35px",
+    margin: "35px auto 35px",
   };
 });
 
@@ -12,7 +12,6 @@ export const Post = styled(Box)(() => {
   return {
     display: "flex",
     justifyContent: "space-between",
-    marginTop: 35,
 
     "@media (max-width: 1070px)": {
       flexDirection: "column",
@@ -24,7 +23,6 @@ export const Post = styled(Box)(() => {
 export const Title = styled("h2")(() => {
   return {
     display: "flex",
-    justifyContent: "center",
     color: "#3498db",
     margin: 0,
     fontSize: 26,

@@ -12,4 +12,5 @@ export const DATA_LINKS = [
   { name: "Couples Therapy", path: "/couples-therapy" },
   { name: "Child and Adolescent", path: "/child-and-adolescent" },
   { name: "Anger Management", path: "/anger-management" },
+  { name: "Cognitive Therapy", path: "/cognitive-therapy" },
 ];

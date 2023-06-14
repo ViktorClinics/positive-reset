@@ -1,11 +1,5 @@
 import { styled, Box } from "@mui/material";
 
-export const Container = styled(Box)({
-  width: "100%",
-  maxWidth: 1300,
-  margin: "35px auto 35px",
-});
-
 export const WrapperHeader = styled(Box)(() => {
   return {
     alignItems: "center",
@@ -19,21 +13,20 @@ export const WrapperHeader = styled(Box)(() => {
   };
 });
 
+export const Title = styled("h2")(() => {
+  return {
+    display: "flex",
+    color: "#3498db",
+    fontSize: 26,
+    margin: 0,
+  };
+});
+
 export const Wrapper = styled(Box)(() => {
   return {
     width: "100%",
     maxWidth: 1300,
-    margin: "0 auto",
-  };
-});
-
-export const TitleHeader = styled("h2")(() => {
-  return {
-    display: "flex",
-    justifyContent: "center",
-    color: "#3498db",
-    margin: 0,
-    fontSize: 26,
+    margin: "35px auto 35px",
   };
 });
 
@@ -41,6 +34,7 @@ export const Block = styled(Box)(() => {
   return {
     display: "flex",
     justifyContent: "space-between",
+    margin: "35px 0 ",
 
     "@media (max-width: 1090px)": {
       flexDirection: "column",
@@ -51,17 +45,11 @@ export const Block = styled(Box)(() => {
 
 export const WrapperBlock = styled(Box)(() => {
   return {
-    width: "100%",
-    maxWidth: 650,
-  };
-});
-
-export const Title = styled("h2")(() => {
-  return {
     display: "flex",
-    color: "#3498db",
-    margin: 0,
-    fontSize: 26,
+    flexDirection: "column",
+    justifyContent: "center",
+    width: "100%",
+    maxWidth: 700,
   };
 });
 
@@ -73,28 +61,9 @@ export const Text = styled("p")(() => {
   };
 });
 
-export const Poster = styled(Box)({
-  width: "100%",
-  maxWidth: 800,
-  margin: "35px auto",
-  background: "#f5f5f5",
-});
-
-export const TitlePoster = styled("h2")({
-  color: "#373737",
-});
-
-export const Ul = styled("ul")({
-  paddingLeft: 20,
-});
-
 export const Li = styled("li")({
-  fontSize: 16,
-  lineHeight: "26px",
   color: "#959595",
+  fontSize: 18,
+  lineHeight: "26px",
   paddingTop: 10,
-});
-
-export const WrapperPoster = styled(Box)({
-  padding: 30,
 });

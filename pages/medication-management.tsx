@@ -5,7 +5,7 @@ import {
   Text,
   Wrapper,
   WrapperBlock,
-} from "../otherPages/medicationManagement/styled";
+} from "../otherPages/medicationManagement/style";
 import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import IMGHeader from "../public/Medication-Management05.jpg";

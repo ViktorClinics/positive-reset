@@ -10,7 +10,7 @@ import {
   Title,
   Wrapper,
   WrapperHeader,
-} from "../otherPages/appointmentRequest/styled";
+} from "../otherPages/appointmentRequest/style";
 import { Box } from "@mui/material";
 import PreferredDataAndTimeField from "../components/FormFields/PreferredDataAndTimeField/PreferredDataAndTimeField";
 import PhoneNumberField from "../components/FormFields/PhoneNumberField/PhoneNumberField";

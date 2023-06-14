@@ -5,7 +5,7 @@ import {
   Block,
   Text,
   WrapperBlock,
-} from "../otherPages/billingAndInsurances/styled";
+} from "../otherPages/billingAndInsurances/style";
 import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import IMGHeader from "../public/xGbNIxtA.jpeg";

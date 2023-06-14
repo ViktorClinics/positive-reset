@@ -9,7 +9,7 @@ import {
   Info,
   Text,
   UnderText,
-} from "../otherPages/telehealth/styled";
+} from "../otherPages/telehealth/style";
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import IMGTwo from "../public/Telehealth02-1024x626.jpg";
 import IMGThree from "../public/Telehealth-1536x910.jpg";
@@ -50,11 +50,17 @@ const Telehealth = () => {
       </WrapperHeader>
       <Container>
         <Post>
-          <Box>
+          <Box
+            sx={{
+              width: "100%",
+              height: "100%",
+              maxWidth: 625,
+              maxHeight: 355,
+            }}
+          >
             <Image
               src={IMGOne}
-              width={625}
-              height={355}
+              id="image"
               alt="THE FUTURE IS NOW – EMBRACE IT"
               title="THE FUTURE IS NOW – EMBRACE IT"
             />
@@ -87,12 +93,17 @@ const Telehealth = () => {
               employees and take care of patients.
             </Text>
           </Info>
-
-          <Box>
+          <Box
+            sx={{
+              width: "100%",
+              height: "100%",
+              maxWidth: 625,
+              maxHeight: 355,
+            }}
+          >
             <Image
               src={IMGTwo}
-              width={625}
-              height={355}
+              id="image"
               alt="A NEW NORMAL MEANS NEW OPPORTUNITIES"
               title="A NEW NORMAL MEANS NEW OPPORTUNITIES"
             />
@@ -116,11 +127,17 @@ const Telehealth = () => {
           </Text>
         </UnderText>
         <Post>
-          <Box>
+          <Box
+            sx={{
+              width: "100%",
+              height: "100%",
+              maxWidth: 625,
+              maxHeight: 355,
+            }}
+          >
             <Image
               src={IMGThree}
-              width={625}
-              height={355}
+              id="image"
               alt="THE DEMAND FOR INNOVATIVE CARE"
               title="THE DEMAND FOR INNOVATIVE CARE"
             />

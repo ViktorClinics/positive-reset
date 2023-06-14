@@ -7,7 +7,7 @@ import {
   StyledForm,
   Success,
   Title,
-} from "../styled";
+} from "../style";
 import NameField from "../../../components/FormFields/NameField/NameField";
 import ErrorValidation from "../../../components/ErrorValidation/ErrorValidation";
 import PhoneNumberField from "../../../components/FormFields/PhoneNumberField/PhoneNumberField";

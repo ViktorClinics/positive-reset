@@ -27,7 +27,7 @@ export const Wrapper = styled(Box)(() => {
   return {
     width: "100%",
     maxWidth: 1300,
-    margin: "0 auto",
+    margin: "35px auto",
   };
 });
 

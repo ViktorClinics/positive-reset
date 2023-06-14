@@ -121,7 +121,16 @@ export const MotivationalQuotes = () => {
           </Post>
         </Info>
         <WrapperPicture>
-          <Image src={IMGMan} width={431} height={680} alt="Man" title="Man" />
+          <Box
+            sx={{
+              width: "100%",
+              height: "100%",
+              maxWidth: 431,
+              maxHeight: 680,
+            }}
+          >
+            <Image src={IMGMan} id="image" alt="Man" title="Man" />
+          </Box>
         </WrapperPicture>
       </Wrapper>
     </Container>

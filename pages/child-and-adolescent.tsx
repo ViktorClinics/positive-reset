@@ -5,7 +5,7 @@ import {
   Wrapper,
   WrapperBlock,
   WrapperHeader,
-} from "../otherPages/childAndAdolescent/styled";
+} from "../otherPages/childAndAdolescent/style";
 import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import IMGHeader from "../public/Child-and-Adolescent01.jpg";
@@ -46,8 +46,8 @@ const ChildAndAdolescent = () => {
                 width={630}
                 height={323}
                 src={IMGOne}
-                alt="Img-1"
-                title="Img-1"
+                alt="CHILD AND ADOLESCENT"
+                title="CHILD AND ADOLESCENT"
               />
             </Box>
             <WrapperBlock>
