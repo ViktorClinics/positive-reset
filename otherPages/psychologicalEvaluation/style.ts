@@ -1,7 +1,9 @@
 import { styled, Box } from "@mui/material";
 
-export const Main = styled("main")(() => {
-  return {};
+export const Container = styled(Box)({
+  width: "100%",
+  maxWidth: 1300,
+  margin: "0 auto",
 });
 
 export const WrapperHeader = styled(Box)(() => {
@@ -14,7 +16,16 @@ export const WrapperHeader = styled(Box)(() => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    marginBottom: 30,
+    marginBottom: 70,
+  };
+});
+
+export const Wrapper = styled(Box)(() => {
+  return {
+    width: "100%",
+    maxWidth: 1300,
+    margin: "0 auto",
+    paddingBottom: 35,
   };
 });
 
@@ -28,20 +39,11 @@ export const TitleHeader = styled("h2")(() => {
   };
 });
 
-export const Wrapper = styled(Box)(() => {
-  return {
-    width: "100%",
-    maxWidth: 1300,
-    margin: "0 auto",
-    paddingBottom: 40,
-  };
-});
-
 export const Block = styled(Box)(() => {
   return {
     display: "flex",
     justifyContent: "space-between",
-    margin: "35px 0",
+    marginTop: 60,
 
     "@media (max-width: 1090px)": {
       flexDirection: "column",
@@ -50,25 +52,16 @@ export const Block = styled(Box)(() => {
   };
 });
 
-export const Img = styled("img")(() => {
-  return {
-    width: "100%",
-    maxWidth: 630,
-  };
-});
-
 export const WrapperBlock = styled(Box)(() => {
   return {
     width: "100%",
     maxWidth: 620,
-    textAlign: "center",
   };
 });
 
 export const Title = styled("h2")(() => {
   return {
     display: "flex",
-    justifyContent: "center",
     color: "#3498db",
     margin: 0,
     fontSize: 26,
@@ -81,4 +74,30 @@ export const Text = styled("p")(() => {
     lineHeight: "26px",
     color: "#959595",
   };
+});
+
+export const Poster = styled(Box)({
+  width: "100%",
+  maxWidth: 800,
+  margin: "35px auto",
+  background: "#f5f5f5",
+});
+
+export const TitlePoster = styled("h2")({
+  color: "#373737",
+});
+
+export const Ul = styled("ul")({
+  paddingLeft: 20,
+});
+
+export const Li = styled("li")({
+  fontSize: 16,
+  lineHeight: "26px",
+  color: "#959595",
+  paddingTop: 10,
+});
+
+export const WrapperPoster = styled(Box)({
+  padding: 30,
 });

@@ -84,3 +84,12 @@ export const BlockDarkText = styled(Box)({
   margin: "20px 0",
   padding: "20px 0",
 });
+
+export const WrapperBlock = styled(Box)(() => {
+  return {
+    marginTop: 70,
+    width: "100%",
+    maxWidth: 620,
+    textAlign: "center",
+  };
+});

@@ -7,7 +7,7 @@ import {
   Text,
   Title,
   WrapperBlock,
-} from "../otherPages/outpatientMentalHealth/styled";
+} from "../otherPages/outpatientMentalHealth/style";
 import React from "react";
 import IMGOne from "../public/Outpatient-Mental-Health02.jpg";
 import IMGTwo from "../public/OMH02a.jpg";

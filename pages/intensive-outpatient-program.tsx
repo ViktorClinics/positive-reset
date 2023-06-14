@@ -9,6 +9,7 @@ import {
   BlockDarkText,
   BoxText,
   FooterText,
+  WrapperBlock,
 } from "../otherPages/intensiveOutpatientProgram/style";
 import { Box } from "@mui/material";
 import Image from "next/image";
@@ -19,7 +20,6 @@ import Head from "next/head";
 import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
 import IMGHeader from "../public/Intensive-Outpatient-Program02b.jpg";
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
-import { WrapperBlock } from "../otherPages/training/styled";
 import IOProgram from "../components/IOProgram/IOProgram";
 
 const IntensiveOutpatientProgram = () => {
