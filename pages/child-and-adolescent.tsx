@@ -6,14 +6,14 @@ import {
   WrapperBlock,
   WrapperHeader,
 } from "../otherPages/childAndAdolescent/styled";
-import { Box } from "@mui/material";
-import IMGOne from "../public/Child-and-Adolescent02.jpg";
-import { Feedbacks } from "../components/Feedbacks/Feedbacks";
-import React from "react";
-import Image from "next/image";
-import IMGHeader from "../public/Child-and-Adolescent01.jpg";
 import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
+import { Feedbacks } from "../components/Feedbacks/Feedbacks";
+import IMGHeader from "../public/Child-and-Adolescent01.jpg";
+import IMGOne from "../public/Child-and-Adolescent02.jpg";
+import { Box } from "@mui/material";
+import Image from "next/image";
 import Head from "next/head";
+import React from "react";
 
 const ChildAndAdolescent = () => {
   return (
@@ -23,6 +23,10 @@ const ChildAndAdolescent = () => {
           Positive Reset Mental Health Clinic - Call Today | Child and
           Adolescent
         </title>
+        <meta
+          name="keywords"
+          content="Child and adolescent services, Child therapy, Adolescent therapy, Child counseling, Adolescent counseling, Child mental health, Adolescent mental health, Child behavioral health, Adolescent behavioral health, Child development, Adolescent development"
+        />
         <meta name="description" content="CHILD AND ADOLESCENT" />
       </Head>
       <OtherHeader />

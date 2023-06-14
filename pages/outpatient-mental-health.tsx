@@ -8,17 +8,17 @@ import {
   Title,
   WrapperBlock,
 } from "../otherPages/outpatientMentalHealth/style";
-import React from "react";
-import IMGOne from "../public/Outpatient-Mental-Health02.jpg";
-import IMGTwo from "../public/OMH02a.jpg";
-import IMGThree from "../public/OMH04a.jpg";
-import IMGFour from "../public/OMH03.jpg";
-import { Box } from "@mui/material";
-import { Feedbacks } from "../components/Feedbacks/Feedbacks";
-import Image from "next/image";
 import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
 import IMGHeader from "../public/Outpatient-Mental-Health01а.jpg";
+import { Feedbacks } from "../components/Feedbacks/Feedbacks";
+import IMGOne from "../public/Outpatient-Mental-Health02.jpg";
+import IMGThree from "../public/OMH04a.jpg";
+import IMGTwo from "../public/OMH02a.jpg";
+import IMGFour from "../public/OMH03.jpg";
+import { Box } from "@mui/material";
+import Image from "next/image";
 import Head from "next/head";
+import React from "react";
 
 const OutpatientMentalHealth = () => {
   return (
@@ -28,6 +28,10 @@ const OutpatientMentalHealth = () => {
           Positive Reset Mental Health Clinic - Call Today | Outpatient Mental
           Health
         </title>
+        <meta
+          name="keywords"
+          content="mental health, outpatient services, therapy, counseling, psychiatry, mental wellness, mental wellbeing, mental health clinic, mental health treatment, behavioral health, mental health support, mental health care, mental health services, mental health resources, mental health professionals, mental health programs, mental health solutions"
+        />
         <meta name="description" content="OUTPATIENT MENTAL HEALTH" />
         <meta
           name="description2"

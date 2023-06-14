@@ -8,16 +8,16 @@ import {
   Button,
   Iframe,
 } from "../otherPages/career/styled";
+import { PersonalForm } from "../otherPages/career/PersonalForm/PersonalForm";
+import CareerOpportunitiesInfo from "../components/CareerOpportunitiesInfo";
+import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
+import IMGHeader from "../public/couple-with-problems02а.jpg";
+import IMGTwo from "../public/pexels-lukas-653429-scaled.jpg";
+import { Feedbacks } from "../components/Feedbacks/Feedbacks";
+import IMGOne from "../public/career.jpg";
 import React, { useRef } from "react";
 import { Box } from "@mui/material";
-import IMGOne from "../public/career.jpg";
-import IMGTwo from "../public/pexels-lukas-653429-scaled.jpg";
-import CareerOpportunitiesInfo from "../components/CareerOpportunitiesInfo";
-import { PersonalForm } from "../otherPages/career/PersonalForm/PersonalForm";
-import { Feedbacks } from "../components/Feedbacks/Feedbacks";
-import IMGHeader from "../public/couple-with-problems02а.jpg";
 import Image from "next/image";
-import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
 import Head from "next/head";
 
 const CareerOpportunities = () => {
@@ -36,6 +36,10 @@ const CareerOpportunities = () => {
           Positive Reset Mental Health Clinic - Call Today | Career
           Opportunities
         </title>
+        <meta
+          name="keywords"
+          content="Career opportunities, Job openings, Employment opportunities, Careers, Hiring, Job vacancies, Work with us, Join our team, Job positions, Job application."
+        />
         <meta name="description" content="CAREER OPPORTUNITIES" />
         <meta
           name="description2"

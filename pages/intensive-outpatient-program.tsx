@@ -11,23 +11,34 @@ import {
   FooterText,
   WrapperBlock,
 } from "../otherPages/intensiveOutpatientProgram/style";
-import { Box } from "@mui/material";
-import Image from "next/image";
-import IMGOne from "../public/Intensive-Outpatient-Program03.jpg";
-import IMGTwo from "../public/Intensive-Outpatient-Program06.jpg";
-import React from "react";
-import Head from "next/head";
 import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
 import IMGHeader from "../public/Intensive-Outpatient-Program02b.jpg";
+import IMGOne from "../public/Intensive-Outpatient-Program03.jpg";
+import IMGTwo from "../public/Intensive-Outpatient-Program06.jpg";
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import IOProgram from "../components/IOProgram/IOProgram";
+import { Box } from "@mui/material";
+import Image from "next/image";
+import Head from "next/head";
+import React from "react";
 
 const IntensiveOutpatientProgram = () => {
   return (
     <>
       <Head>
-        <title></title>
-        <meta />
+        <title>
+          Positive Reset Mental Health Clinic - Call Today | Outpatient Mental
+          Health
+        </title>
+        <meta
+          name="keywords"
+          content="intensive outpatient program, mental health treatment, therapy, counseling, mental wellness, mental wellbeing, behavioral health, mental health support, mental health care, mental health services, mental health programs, mental health resources, mental health professionals, mental health recovery, mental health therapy, mental health rehabilitation, intensive therapy program, mental health support program, outpatient mental health program"
+        />
+        <meta name="description" content="INTENSIVE OUTPATIENT PROGRAM" />
+        <meta
+          name="description2"
+          content="INTENSIVE OUTPATIENT TREATMENT PROGRAMS (IOP)"
+        />
       </Head>
       <OtherHeader />
       <WrapperHeader

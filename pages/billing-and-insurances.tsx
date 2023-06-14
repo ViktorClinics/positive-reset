@@ -6,15 +6,15 @@ import {
   Text,
   WrapperBlock,
 } from "../otherPages/billingAndInsurances/styled";
-import React from "react";
-import { Box } from "@mui/material";
+import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
+import { Feedbacks } from "../components/Feedbacks/Feedbacks";
+import IMGHeader from "../public/xGbNIxtA.jpeg";
 import IMGOne from "../public/Billing01.jpg";
 import IMGTwo from "../public/Billing02.jpg";
-import IMGHeader from "../public/xGbNIxtA.jpeg";
-import { Feedbacks } from "../components/Feedbacks/Feedbacks";
-import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
+import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
+import React from "react";
 
 const BillingAndInsurances = () => {
   return (
@@ -24,6 +24,10 @@ const BillingAndInsurances = () => {
           Positive Reset Mental Health Clinic - Call Today | Billing and
           Insurances
         </title>
+        <meta
+          name="keywords"
+          content="Billing and insurances, Insurance coverage, Payment options, Medical billing, Insurance claims, Billing services, Healthcare billing, Insurance reimbursement, Insurance providers, Payment assistance"
+        />
         <meta name="description" content="BILLING AND INSURANCES" />
         <meta name="description2" content="FINANCIAL RESOURCES" />
       </Head>

@@ -6,16 +6,16 @@ import {
   Wrapper,
   WrapperBlock,
 } from "../otherPages/medicationManagement/styled";
-import React from "react";
-import { Box } from "@mui/material";
+import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
+import { Feedbacks } from "../components/Feedbacks/Feedbacks";
+import IMGHeader from "../public/Medication-Management05.jpg";
+import IMGThree from "../public/Medication-Management04.jpg";
 import IMGOne from "../public/Medication-Management01.jpg";
 import IMGTwo from "../public/Medication-Management03.jpg";
-import IMGThree from "../public/Medication-Management04.jpg";
-import IMGHeader from "../public/Medication-Management05.jpg";
-import { Feedbacks } from "../components/Feedbacks/Feedbacks";
-import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
+import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
+import React from "react";
 
 const MedicationManagement = () => {
   return (
@@ -25,6 +25,10 @@ const MedicationManagement = () => {
           Positive Reset Mental Health Clinic - Call Today | Medication
           Management
         </title>
+        <meta
+          name="keywords"
+          content="Medication management, Medication administration, Medication monitoring, Medication adherence, Medication safety, Medication optimization, Prescription management, Medication reminders, Medication tracking, Medication support"
+        />
         <meta name="description" content="MEDICATION MANAGEMENT" />
       </Head>
       <OtherHeader />

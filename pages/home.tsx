@@ -1,10 +1,10 @@
-import { HomeHeader } from "../components/Layout/HomeHeader/HomeHeader";
 import { MotivationalQuotes } from "../otherPages/home/MotivationalQuotes/MotivationalQuotes";
 import { FranchiseOptions } from "../otherPages/home/FranchiseOptions/FranchiseOptions";
 import { AboutFranchising } from "../otherPages/home/AboutFranchising/AboutFranchising";
-import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import { OurPartners } from "../otherPages/home/OurPartners/OurPartners";
+import { HomeHeader } from "../components/Layout/HomeHeader/HomeHeader";
 import { Services } from "../otherPages/home/Services/Services";
+import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import { Box } from "@mui/material";
 import React, { FC } from "react";
 import Head from "next/head";

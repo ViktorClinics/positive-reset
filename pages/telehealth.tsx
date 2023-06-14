@@ -10,11 +10,11 @@ import {
   Text,
   UnderText,
 } from "../otherPages/telehealth/styled";
-import IMGOne from "../public/Telehealth01.jpg";
+import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import IMGTwo from "../public/Telehealth02-1024x626.jpg";
 import IMGThree from "../public/Telehealth-1536x910.jpg";
+import IMGOne from "../public/Telehealth01.jpg";
 import IMGHeader from "../public/4Z8WMNtQ.jpeg";
-import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
@@ -26,6 +26,10 @@ const Telehealth = () => {
         <title>
           Positive Reset Mental Health Clinic - Call Today | Telehealth
         </title>
+        <meta
+          name="keywords"
+          content="Telehealth services, Online therapy, Virtual counseling, Remote mental health support, Telemedicine solutions, Telepsychiatry, Teletherapy sessions, Telehealth benefits, Accessible healthcare, Remote treatment options"
+        />
         <meta name="description" content="STATE LICENSE" />
         <meta
           name="description2"

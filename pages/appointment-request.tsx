@@ -19,9 +19,9 @@ import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
 import EmailField from "../components/FormFields/EmailField/EmailField";
 import NameField from "../components/FormFields/NameField/NameField";
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
+import { PRIVATE_DATA } from "../otherPages/privateData";
 import IMGHeader from "../public/NAPr4GWk.jpeg";
 import React from "react";
-import { PRIVATE_DATA } from "../otherPages/privateData";
 import Head from "next/head";
 
 interface IForm {
@@ -61,6 +61,10 @@ const AppointmentRequest = () => {
         <title>
           Positive Reset Mental Health Clinic - Call Today | Appointment Request
         </title>
+        <meta
+          name="keywords"
+          content="Appointment request, Book appointment, Schedule appointment, Online appointment, Request appointment, Book online, Healthcare appointment, Medical appointment, Appointment booking, Patient appointment"
+        />
         <meta name="description" content="APPOINTMENT REQUEST" />
       </Head>
       <OtherHeader />

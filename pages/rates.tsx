@@ -29,6 +29,10 @@ const Rates = () => {
     <>
       <Head>
         <title> Positive Reset Mental Health Clinic - Call Today | Rates</title>
+        <meta
+          name="keywords"
+          content="rates, pricing, fees, cost, payment, service charges, pricing structure, rate plans, pricing options, fee schedule, payment information, service costs, pricing details, affordable rates, competitive pricing, transparent pricing, budget-friendly rates, discounted rates, special offers"
+        />
       </Head>
       <OtherHeader />
       <WrapperHeader
