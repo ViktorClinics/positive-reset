@@ -39,6 +39,7 @@ export const Block = styled(Box)(() => {
   return {
     display: "flex",
     justifyContent: "space-between",
+    margin: "35px 0",
 
     "@media (max-width: 1090px)": {
       flexDirection: "column",
