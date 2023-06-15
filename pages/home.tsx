@@ -16,7 +16,7 @@ const Home: FC = () => {
         <title>Positive Reset Mental Health Clinic - Call Today</title>
         <meta
           name="description"
-          content="POSITIVE RESET is a successful franchise company that operates Mental Health Clinics across the United States. We provide a professional system with a proven track record of financial success and positive treatment outcomes. Call us today at 732-955-4141."
+          content="New Jersey Mental Health Clinic offers psychotherapy; medication management, comprehensive assessment, diagnosis and treatment of a full range of behavioral disorders."
         />
         <meta
           name="description2"
