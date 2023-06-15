@@ -19,7 +19,7 @@ const Home: FC = () => {
           content="POSITIVE RESET is a successful franchise company that operates Mental Health Clinics across the United States. We provide a professional system with a proven track record of financial success and positive treatment outcomes. Call us today at 732-955-4141."
         />
         <meta
-          name="description"
+          name="description2"
           content="reset, positive reset, mental health, wellness, therapy, healing, personal growth, self-improvement, well-being, mind-body balance, positive mindset, emotional well-being, stress management, self-care"
         />
       </Head>
