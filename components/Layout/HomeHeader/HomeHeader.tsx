@@ -42,7 +42,6 @@ export const HomeHeader = () => {
       )
       .then((response) => {
         setHeaderInfo(response.data.items);
-        console.log(response.data.items[0]);
       })
       .catch((error) => {
         console.error("Error fetching posts:", error);
