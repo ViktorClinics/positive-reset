@@ -11,7 +11,7 @@ export const Container = styled("main")(() => {
 export const Post = styled(Box)(() => {
   return {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "space-evenly",
     marginTop: 35,
 
     "@media (max-width: 1070px)": {

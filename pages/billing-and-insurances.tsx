@@ -63,7 +63,7 @@ const BillingAndInsurances = () => {
             </WrapperBlock>
           </Block>
           <Block>
-            <WrapperBlock>
+            <WrapperBlock sx={{ width: "100%", maxWidth: 700 }}>
               <Title>FINANCIAL RESOURCES</Title>
               <Text>We accept all Credit and Debit cards and Cash.</Text>
               <Text>

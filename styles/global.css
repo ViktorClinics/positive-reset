@@ -69,6 +69,19 @@ body {
   text-decoration: none;
 }
 
+#telehealth_link {
+  display: flex;
+  text-decoration: none;
+  color: #3498db;
+  font-size: 16px;
+  padding-top: 10px;
+  transition: .3s;
+}
+
+#telehealth_link:hover {
+  color: #555555;
+}
+
 @media (max-width: 769px) {
   #link {
     display: none;

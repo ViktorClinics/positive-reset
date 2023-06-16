@@ -96,11 +96,16 @@ const CareerOpportunities = () => {
             <WrapperBlock>
               <CareerOpportunitiesInfo />
             </WrapperBlock>
-            <Box>
+            <Box
+              sx={{
+                width: "100%",
+                maxWidth: 630,
+                height: "100%",
+                maxHeight: 417,
+              }}
+            >
               <Image
                 id="image"
-                width={630}
-                height={417}
                 src={IMGTwo}
                 alt="WHO WE ARE"
                 title="WHO WE ARE"

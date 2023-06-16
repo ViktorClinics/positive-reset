@@ -18,6 +18,8 @@ import IMGHeader from "../public/4Z8WMNtQ.jpeg";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
+import { DATA_LINKS } from "../components/Services/constants";
+import Link from "next/link";
 
 const Telehealth = () => {
   return (
@@ -30,23 +32,10 @@ const Telehealth = () => {
           name="keywords"
           content="Telehealth services, Online therapy, Virtual counseling, Remote mental health support, Telemedicine solutions, Telepsychiatry, Teletherapy sessions, Telehealth benefits, Accessible healthcare, Remote treatment options"
         />
-        <meta name="description" content="STATE LICENSE" />
-        <meta
-          name="description2"
-          content="TELEHEALTH: AN EXCITING NEW SEGMENT FOR FRANCHISING OPPORTUNITY"
-        />
-        <meta name="description3" content="THE FUTURE IS NOW – EMBRACE IT" />
-        <meta
-          name="description4"
-          content="A NEW NORMAL MEANS NEW OPPORTUNITIES"
-        />
-        <meta name="description5" content="THE DEMAND FOR INNOVATIVE CARE" />
       </Head>
       <OtherHeader />
       <WrapperHeader style={{ backgroundImage: `url(${IMGHeader.src})` }}>
-        <Title>
-          TELEHEALTH: AN EXCITING NEW SEGMENT FOR FRANCHISING OPPORTUNITY
-        </Title>
+        <Title>TELEHEALTH</Title>
       </WrapperHeader>
       <Container>
         <Post>
@@ -61,36 +50,46 @@ const Telehealth = () => {
             <Image
               src={IMGOne}
               id="image"
-              alt="THE FUTURE IS NOW – EMBRACE IT"
-              title="THE FUTURE IS NOW – EMBRACE IT"
+              alt=" Behavioral health"
+              title=" Behavioral health"
             />
           </Box>
           <Info>
-            <Title>THE FUTURE IS NOW – EMBRACE IT</Title>
             <Text>
-              All franchisees have access to the proprietary telehealth software
-              system. Telehealth immediately clicked with existing and
-              prospective franchisees, which they herald as an innovative
-              business model that will be attractive to future investors trying
-              to see what business opportunities will be viable in our current
-              economic environment.
+              Behavioral health — like other areas of health care — has changed
+              significantly due to the COVID-19 public health emergency.
+            </Text>
+            <Text>
+              Behavioral telehealth also benefits patients who can access care
+              from their homes with more options for safety, privacy, and
+              convenience.
+            </Text>
+            <Text>
+              Behavioral telehealth may also be referred to as telebehavioral
+              health, telemental health, telepsychiatry, or telepsychology.
+            </Text>
+            <Text>
+              Virtual, telebehavioral health care can be part of an integrated
+              approach to treating substance use disorders.
             </Text>
           </Info>
         </Post>
         <Post>
           <Info>
-            <Title>A NEW NORMAL MEANS NEW OPPORTUNITIES</Title>
             <Text>
-              Positive Reset Services is a behavioral care franchise that has
-              developed a telemedicine system that transforms and simplifies
-              mental health services. Our network of physicians supporting this
-              unique Behavioral Care model is at the center of its success. The
-              presence of doctors every hour when the clinic is open allows
-              patients to receive services. This is a great competitive
-              advantage given that by normal industry standards, it takes a long
-              time to see a doctor. This is a new and secure business model that
-              allows clinics to operate, franchisees to run their business, hire
-              employees and take care of patients.
+              Our Telehealth means the delivery of health care services through
+              the use of interactive audio and video technology, permitting
+              real-time communication between the patient at the originating
+              site and the provider, for the purpose of diagnosis, consultation,
+              or treatment.
+            </Text>
+            <Text>
+              Our platform is all compliant, in order to protect your privacy
+              and confidentiality. Our technology is at no cost to our patients.
+            </Text>
+            <Text>
+              Patients can participate in sessions from home or any location
+              determined appropriate by the patient and their clinician.
             </Text>
           </Info>
           <Box
@@ -104,8 +103,8 @@ const Telehealth = () => {
             <Image
               src={IMGTwo}
               id="image"
-              alt="A NEW NORMAL MEANS NEW OPPORTUNITIES"
-              title="A NEW NORMAL MEANS NEW OPPORTUNITIES"
+              alt="All franchisees have access to a ..."
+              title=" All franchisees have access to a ..."
             />
           </Box>
         </Post>
@@ -138,21 +137,21 @@ const Telehealth = () => {
             <Image
               src={IMGThree}
               id="image"
-              alt="THE DEMAND FOR INNOVATIVE CARE"
-              title="THE DEMAND FOR INNOVATIVE CARE"
+              alt="CLINICAL SERVICES USING TELEHEALTH PLATFORM:"
+              title="CLINICAL SERVICES USING TELEHEALTH PLATFORM:"
             />
           </Box>
           <Info>
-            <Title>THE DEMAND FOR INNOVATIVE CARE</Title>
-            <Text>
-              Thanks to telehealth and the need for mental health services,
-              franchisees can depend on a successful business model that
-              performs well during even the most challenging economic
-              circumstances. The path to success is very straightforward to
-              understand. Not only is it a business model that’s going to work
-              for a year or two, it’s a concept that you can easily see working
-              for the length of the franchise agreement.
-            </Text>
+            <Title>CLINICAL SERVICES USING TELEHEALTH PLATFORM: </Title>
+            <ul style={{ paddingLeft: "20px" }}>
+              {DATA_LINKS.map(({ name, path }) => (
+                <li style={{ color: "#555" }}>
+                  <Link id="telehealth_link" href={path}>
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </Info>
         </Post>
       </Container>

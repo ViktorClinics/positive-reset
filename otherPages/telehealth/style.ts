@@ -17,7 +17,7 @@ export const Container = styled("main")(() => {
   return {
     width: "100%",
     maxWidth: 1300,
-    margin: "35px auto 65px",
+    margin: "35px auto 35px",
   };
 });
 

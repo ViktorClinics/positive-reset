@@ -40,7 +40,7 @@ export const TitleHeader = styled("h2")(() => {
 export const Block = styled(Box)(() => {
   return {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "space-evenly",
 
     "@media (max-width: 1090px)": {
       flexDirection: "column",

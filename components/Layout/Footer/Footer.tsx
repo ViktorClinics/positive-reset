@@ -11,7 +11,6 @@ import {
   WrapperPost,
   Post,
   Title,
-  Date,
   ImgPost,
   Contact,
   ContactInfo,
@@ -154,9 +153,11 @@ export const Footer: FC = () => {
           <LogoImg />
           <TextLogo>
             POSITIVE RESET SERVICES is a successful franchise company that opens
-            Mental Health Clinics across Unlined Sates. POSITIVE RESET SERVICES
-            works like a professional system that has stood the test of time,
-            financial success and successful treatment outcomes.
+            Mental Health Clinics across Unlined Sates.
+            <br />
+            POSITIVE RESET SERVICES works like a professional system that has
+            stood the test of time, financial success and successful treatment
+            outcomes.
           </TextLogo>
           <Contact>
             <WrapperImg>
@@ -211,7 +212,6 @@ export const Footer: FC = () => {
                   />
                   <Box>
                     <Text>{post.text}</Text>
-                    <Date>{post.button}</Date>
                   </Box>
                 </Post>
               ))}

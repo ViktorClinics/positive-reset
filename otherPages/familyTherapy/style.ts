@@ -33,7 +33,7 @@ export const Wrapper = styled(Box)(() => {
 export const Block = styled(Box)(() => {
   return {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "space-evenly",
     margin: "35px 0 ",
 
     "@media (max-width: 1090px)": {

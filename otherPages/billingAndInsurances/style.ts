@@ -41,7 +41,7 @@ export const WrapperBlock = styled(Box)(() => {
 
 export const Text = styled("p")(() => {
   return {
-    fontSize: 16,
+    fontSize: 18,
     lineHeight: "26px",
     color: "#959595",
   };
