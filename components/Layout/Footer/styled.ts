@@ -1,5 +1,4 @@
 import { styled, Box } from "@mui/material";
-import Link from "next/link";
 import Image from "next/image";
 
 export const Container = styled("footer")(() => {
@@ -111,14 +110,6 @@ export const Title = styled("h2")(() => {
   };
 });
 
-export const Date = styled("p")(() => {
-  return {
-    color: "white",
-    marginTop: 12,
-    fontSize: 15,
-  };
-});
-
 export const WrapperPost = styled(Box)(() => {
   return {
     marginTop: 34,
@@ -144,20 +135,6 @@ export const Li = styled("li")(() => {
     borderBottom: "1px solid rgba(255,255,255,.08)",
     transition: ".3s",
     padding: "9px 0",
-
-    "&:hover": {
-      color: "#3498db",
-    },
-  };
-});
-
-export const Nav = styled(Link)(() => {
-  return {
-    color: "white",
-    textDecoration: "none",
-    fontSize: 15,
-    transition: ".3s",
-    cursor: "pointer",
 
     "&:hover": {
       color: "#3498db",
@@ -231,14 +208,6 @@ export const WrapperAlarm = styled("div")(() => {
     "@media (max-width: 1335px)": {
       left: 115,
     },
-  };
-});
-
-export const ImgAlarm = styled("img")(() => {
-  return {
-    maxWidth: "100%",
-    maxHeight: "100%",
-    objectFit: "contain",
   };
 });
 
