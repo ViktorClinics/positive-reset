@@ -145,7 +145,7 @@ const Telehealth = () => {
             <Title>CLINICAL SERVICES USING TELEHEALTH PLATFORM: </Title>
             <ul style={{ paddingLeft: "20px" }}>
               {DATA_LINKS.map(({ name, path }) => (
-                <li style={{ color: "#555" }}>
+                <li key={name} style={{ color: "#555" }}>
                   <Link id="telehealth_link" href={path}>
                     {name}
                   </Link>
