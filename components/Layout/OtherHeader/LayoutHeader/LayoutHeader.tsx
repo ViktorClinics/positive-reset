@@ -2,16 +2,15 @@ import {
   Contact,
   ContactAndFollow,
   ContactInfo,
-  Email,
   Follow,
   FollowInfo,
-  Link,
   Tel,
   Title,
   Wrapper,
   WrapperFollow,
   WrapperImg,
   Address,
+  LinkA,
 } from "./styled";
 import React, { FC, useEffect, useState } from "react";
 import axios from "axios";
@@ -23,8 +22,10 @@ import Image from "next/image";
 import { PRIVATE_DATA } from "../../../../otherPages/privateData";
 import LogoImgDark from "../../../LogoImgDark/LogoImgDark";
 import IMGLocation from "../../../../public/icons8-location-50-dark.png";
+import Link from "next/link";
 
-const ID = "telephoneNumber";
+const ID = "positiveresetTelEmailAddress";
+const ID_Links = "positiveresetLinks";
 
 export const LayoutHeader: FC = () => {
   const [email, setEmail] = useState<string>("");
@@ -32,6 +33,7 @@ export const LayoutHeader: FC = () => {
   const [location, setLocation] = useState<string>("");
   const [linkFacebook, setLinkFaceBook] = useState<string>("");
   const [linkLinkedin, setLinkLinkedin] = useState<string>("");
+  const [linkEmail, setLinkEmail] = useState<string>("");
 
   useEffect(() => {
     axios
@@ -39,29 +41,26 @@ export const LayoutHeader: FC = () => {
         `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID}&access_token=${PRIVATE_DATA.accessId}`
       )
       .then((response) => {
-        setTelNum(
-          response.data.items[0].fields.positiveresetTelephoneNumber.content[0]
-            .content[0].value
-        );
-        setEmail(
-          response.data.items[0].fields.positiveresetEmail.content[0].content[0]
-            .value
-        );
-        setLinkFaceBook(
-          response.data.items[0].fields.facebookLink.content[0].content[0].value
-        );
-        setLinkLinkedin(
-          response.data.items[0].fields.linkedinLink.content[0].content[0].value
-        );
-        setLocation(
-          response.data.items[0].fields.positiveresetAddress.content[0]
-            .content[0].value
-        );
+        setTelNum(response.data.items[0].fields.telephoneNumber);
+        setEmail(response.data.items[0].fields.email);
+        setLocation(response.data.items[0].fields.address);
+        setLinkEmail(response.data.items[0].fields.linkEmail);
       })
       .catch((error) => {
         console.error("Error fetching posts:", error);
       });
   }, []);
+
+  useEffect(() => {
+    axios
+      .get(
+        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID_Links}&access_token=${PRIVATE_DATA.accessId}`
+      )
+      .then((response) => {
+        setLinkFaceBook(response.data.items[0].fields.facebook);
+        setLinkLinkedin(response.data.items[0].fields.linkedIn);
+      });
+  });
 
   return (
     <Wrapper>
@@ -79,7 +78,9 @@ export const LayoutHeader: FC = () => {
           </WrapperImg>
           <ContactInfo>
             <Tel>{telNum}</Tel>
-            <Email>{email}</Email>
+            <Link id="link" href={linkEmail}>
+              {email}
+            </Link>
           </ContactInfo>
         </Contact>
         <Contact>
@@ -103,7 +104,7 @@ export const LayoutHeader: FC = () => {
           <FollowInfo>
             <Title>Follow Us</Title>
             <WrapperFollow>
-              <Link href={linkFacebook} target="_blank">
+              <LinkA href={linkFacebook} target="_blank">
                 <Image
                   src={IMGFacebook}
                   width={12}
@@ -111,8 +112,8 @@ export const LayoutHeader: FC = () => {
                   alt="Facebook"
                   title="Facebook"
                 />
-              </Link>
-              <Link href={linkLinkedin} target="_blank">
+              </LinkA>
+              <LinkA href={linkLinkedin} target="_blank">
                 <Image
                   src={IMGLinkedin}
                   width={12}
@@ -120,7 +121,7 @@ export const LayoutHeader: FC = () => {
                   alt="Linkedin"
                   title="Linkedin"
                 />
-              </Link>
+              </LinkA>
             </WrapperFollow>
           </FollowInfo>
         </Follow>
