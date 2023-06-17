@@ -14,6 +14,16 @@ export const WrapperBox = styled(Box)(() => {
       boxShadow: "0px 0px 20px 10px silver",
     },
 
+    "@media (max-width: 1400px)": {
+      width: 550,
+      height: 350,
+    },
+
+    "@media (max-width: 1300px)": {
+      width: 450,
+      height: 250,
+    },
+
     "@media (max-width: 661px)": {
       width: 440,
       maxWidth: "100%",
@@ -33,23 +43,9 @@ export const Wrapper = styled(Box)(() => {
     maxWidth: 1303,
     margin: "35px auto 35px",
 
-    "@media (max-width: 1335px)": {
+    "@media (max-width: 1200px)": {
       flexDirection: "column",
       alignItems: "center",
-    },
-  };
-});
-
-export const WrapperVideo = styled(Box)(() => {
-  return {
-    display: "flex",
-    cursor: "pointer",
-    marginRight: 26,
-
-    "&:hover": {
-      background: "white",
-      transition: ".3s",
-      boxShadow: "0px 0px 20px 10px silver",
     },
   };
 });

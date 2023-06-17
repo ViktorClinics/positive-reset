@@ -20,6 +20,7 @@ import EmailField from "../components/FormFields/EmailField/EmailField";
 import NameField from "../components/FormFields/NameField/NameField";
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import { PRIVATE_DATA } from "../otherPages/privateData";
+import { Iframe } from "../otherPages/career/style";
 import IMGHeader from "../public/NAPr4GWk.jpeg";
 import React from "react";
 import Head from "next/head";
@@ -121,6 +122,9 @@ const AppointmentRequest = () => {
             )}
           </Box>
         </Wrapper>
+        <Box sx={{ width: "100%", maxWidth: "1300px", margin: "0 auto 35px" }}>
+          <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.836713694201!2d-74.4243125246827!3d40.41246795589985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c5710ac7b9cd%3A0x2a1b05a115f4c381!2s6%20Cornwall%20Ct%20B%2C%20East%20Brunswick%2C%20NJ%2008816!5e0!3m2!1sen!2sus!4v1684616255217!5m2!1sen!2sus"></Iframe>
+        </Box>
         <Feedbacks />
       </Box>
     </>

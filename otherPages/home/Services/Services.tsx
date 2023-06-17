@@ -30,7 +30,7 @@ export const Services: FC = () => {
           height={365}
           alt="Video Logo"
           title="Video Logo"
-          id="img"
+          id="img_Logo"
         />
       </WrapperBox>
       <AboutFranchise />

@@ -19,7 +19,7 @@ export const Title = styled("h2")(() => {
     justifyContent: "center",
     color: "#3498db",
     fontSize: 26,
-    marginTop: 30,
+    marginTop: 0,
   };
 });
 
@@ -43,6 +43,7 @@ export const Text = styled("p")(() => {
     fontSize: 16,
     lineHeight: "26px",
     color: "#959595",
+    marginTop: 0,
   };
 });
 

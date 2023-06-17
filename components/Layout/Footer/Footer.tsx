@@ -14,7 +14,6 @@ import {
   ImgPost,
   Contact,
   ContactInfo,
-  Email,
   Tel,
   WrapperImg,
   TextLogo,
@@ -60,9 +59,10 @@ interface Post {
   button: string;
 }
 
-const ID = "telephoneNumber";
+const ID = "positiveresetTelEmailAddress";
+const ID_Links = "positiveresetLinks";
 const IDPosts = "aboutFranchising";
-const IDWorkingHours = "workingHours";
+const IDWorkingHours = "positiveresetWorkingHours";
 
 export const Footer: FC = () => {
   const [telNum, setTelNum] = useState<string>("");
@@ -73,6 +73,7 @@ export const Footer: FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [workingHours, setWorkingHours] = useState<any>();
   const [location, setLocation] = useState<string>("");
+  const [linkEmail, setLinkEmail] = useState<string>("");
 
   useEffect(() => {
     axios
@@ -111,32 +112,28 @@ export const Footer: FC = () => {
       .get(
         `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID}&access_token=${PRIVATE_DATA.accessId}`
       )
-      .then((response: any) => {
-        setTelNum(
-          response.data.items[0].fields.telephoneNumber.content[0].content[0]
-            .value
-        );
-        setEmail(
-          response.data.items[0].fields.email.content[0].content[0].value
-        );
-        setLinkFaceBook(
-          response.data.items[0].fields.facebookLink.content[0].content[0].value
-        );
-        setLinkLinkedin(
-          response.data.items[0].fields.linkedinLink.content[0].content[0].value
-        );
-        setTwitter(
-          response.data.items[0].fields.twitterLink.content[0].content[0].value
-        );
-        setLocation(
-          response.data.items[0].fields.positiveresetAddress.content[0]
-            .content[0].value
-        );
+      .then((response) => {
+        setTelNum(response.data.items[0].fields.telephoneNumber);
+        setEmail(response.data.items[0].fields.email);
+        setLocation(response.data.items[0].fields.address);
+        setLinkEmail(response.data.items[0].fields.linkEmail);
       })
-      .catch((error: any) => {
+      .catch((error) => {
         console.error("Error fetching posts:", error);
       });
   }, []);
+
+  useEffect(() => {
+    axios
+      .get(
+        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID_Links}&access_token=${PRIVATE_DATA.accessId}`
+      )
+      .then((response) => {
+        setLinkFaceBook(response.data.items[0].fields.facebook);
+        setLinkLinkedin(response.data.items[0].fields.linkedIn);
+        setTwitter(response.data.items[0].fields.twitter);
+      });
+  });
 
   useEffect(() => {
     axios
@@ -160,7 +157,7 @@ export const Footer: FC = () => {
             outcomes.
           </TextLogo>
           <Contact>
-            <WrapperImg>
+            <WrapperImg sx={{ marginRight: 3 }}>
               <Image
                 src={IMGPhoneLogo}
                 width={25}
@@ -169,9 +166,11 @@ export const Footer: FC = () => {
                 title="Phone"
               />
             </WrapperImg>
-            <ContactInfo>
+            <ContactInfo sx={{ width: 208 }}>
               <Tel>{telNum}</Tel>
-              <Email>{email}</Email>
+              <Link id="white-link" href={linkEmail}>
+                {email}
+              </Link>
             </ContactInfo>
           </Contact>
           <Contact>
@@ -234,8 +233,7 @@ export const Footer: FC = () => {
               workingHours
                 .map((day: any, index: string) => (
                   <Day key={index}>
-                    {day.fields.day}:{" "}
-                    {day.fields.hours.content[0].content[0].value}
+                    {day.fields.day}: {day.fields.workingHours}
                   </Day>
                 ))
                 .reverse()}

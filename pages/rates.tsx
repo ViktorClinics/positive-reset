@@ -153,21 +153,21 @@ const Rates = () => {
             />
           </Box>
         </Post>
-        <Post>
-          <TextWithWidth sx={{ fontSize: 20 }}>
-            *No show or last than 24 hours cancellation fee – $60
-            <br />
-            *All service prices shall be disclosed to the patient and agreed by
-            patient before the services started.
-            <br />
-            *All payments shall be made prior to the services.
-            <br />
-            *We accept Medicaid, Medicare and all Major medical Insurances.
-            <br />
-            *If the the service has been rendered the payment is final.
-          </TextWithWidth>
-        </Post>
       </Container>
+      <Box sx={{ width: "100%", maxWidth: "1120px", margin: "0 auto 35px" }}>
+        <TextWithWidth sx={{ fontSize: 20 }}>
+          *No show or last than 24 hours cancellation fee – $60
+          <br />
+          *All service prices shall be disclosed to the patient and agreed by
+          patient before the services started.
+          <br />
+          *All payments shall be made prior to the services.
+          <br />
+          *We accept Medicaid, Medicare and all Major medical Insurances.
+          <br />
+          *If the the service has been rendered the payment is final.
+        </TextWithWidth>
+      </Box>
       <Feedbacks />
     </>
   );

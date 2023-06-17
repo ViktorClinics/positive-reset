@@ -70,6 +70,7 @@ export const UnderText = styled(Box)(() => {
 
 export const Text = styled("p")(() => {
   return {
+    marginTop: 0,
     fontSize: 16,
     lineHeight: "26px",
     color: "#959595",

@@ -91,6 +91,14 @@ const Telehealth = () => {
               Patients can participate in sessions from home or any location
               determined appropriate by the patient and their clinician.
             </Text>
+            <Text>
+              All franchisees have access to a proprietary telemedicine software
+              system. Telemedicine immediately resonated with existing and
+              potential franchisees, which they proclaim as an innovative
+              business model that will be attractive to future investors trying
+              to see what business opportunities will be viable in our current
+              economic climate.
+            </Text>
           </Info>
           <Box
             sx={{
@@ -109,14 +117,6 @@ const Telehealth = () => {
           </Box>
         </Post>
         <UnderText>
-          <Text>
-            All franchisees have access to a proprietary telemedicine software
-            system. Telemedicine immediately resonated with existing and
-            potential franchisees, which they proclaim as an innovative business
-            model that will be attractive to future investors trying to see what
-            business opportunities will be viable in our current economic
-            climate.
-          </Text>
           <Text>
             This allows an investor with no experience in the behavioral field
             to scale their business in the industry. If you combine the fact

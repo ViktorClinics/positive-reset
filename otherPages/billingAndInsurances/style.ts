@@ -41,7 +41,7 @@ export const WrapperBlock = styled(Box)(() => {
 
 export const Text = styled("p")(() => {
   return {
-    fontSize: 18,
+    fontSize: 16,
     lineHeight: "26px",
     color: "#959595",
   };
@@ -50,7 +50,7 @@ export const Text = styled("p")(() => {
 export const Block = styled(Box)(() => {
   return {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "space-evenly",
     margin: "35px 0",
 
     "@media (max-width: 1090px)": {

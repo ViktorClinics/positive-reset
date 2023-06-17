@@ -14,9 +14,28 @@ import IMGTwo from "../public/Billing02.jpg";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { PRIVATE_DATA } from "../otherPages/privateData";
+
+const ID = "positiveresetTelEmailAddress";
 
 const BillingAndInsurances = () => {
+  const [telNum, setTelNum] = useState<string>("");
+
+  useEffect(() => {
+    axios
+      .get(
+        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID}&access_token=${PRIVATE_DATA.accessId}`
+      )
+      .then((response) => {
+        setTelNum(response.data.items[0].fields.telephoneNumber);
+      })
+      .catch((error) => {
+        console.error("Error fetching posts:", error);
+      });
+  }, []);
+
   return (
     <>
       <Head>
@@ -41,7 +60,7 @@ const BillingAndInsurances = () => {
           <Title>BILLING AND INSURANCES</Title>
         </WrapperHeader>
         <Wrapper>
-          <Block>
+          <Block sx={{ justifyContent: "space-between" }}>
             <Box>
               <Image
                 id="image"
@@ -71,7 +90,7 @@ const BillingAndInsurances = () => {
               </Text>
               <Text>
                 If you have questions about your bill, please contact our
-                billing department at 847-729-6001. For questions regarding your
+                billing department at {telNum}. For questions regarding your
                 insurance, please contact your insurance company directly.
               </Text>
               <Text>
@@ -84,8 +103,7 @@ const BillingAndInsurances = () => {
             <Box>
               <Image
                 id="image"
-                width={500}
-                height={750}
+                height={550}
                 src={IMGTwo}
                 alt="FINANCIAL RESOURCES"
                 title="FINANCIAL RESOURCES"

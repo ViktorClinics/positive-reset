@@ -6,10 +6,8 @@ import {
   Text,
   WrapperBlock,
   Button,
-  Iframe,
 } from "../otherPages/career/style";
 import { PersonalForm } from "../otherPages/career/PersonalForm/PersonalForm";
-import CareerOpportunitiesInfo from "../components/CareerOpportunitiesInfo";
 import { OtherHeader } from "../components/Layout/OtherHeader/OtherHeader";
 import IMGHeader from "../public/couple-with-problems02а.jpg";
 import IMGTwo from "../public/pexels-lukas-653429-scaled.jpg";
@@ -60,7 +58,7 @@ const CareerOpportunities = () => {
             <Box>
               <Image
                 width={635}
-                height={421}
+                height={470}
                 src={IMGOne}
                 id="img"
                 alt="GROW WITH THE TEAM THAT PUTS PATIENTS FIRST"
@@ -94,7 +92,30 @@ const CareerOpportunities = () => {
           </Block>
           <Block>
             <WrapperBlock>
-              <CareerOpportunitiesInfo />
+              <Title>WHO WE ARE:</Title>
+              <Text>
+                Our Clinic is founded on the mission of improving mental
+                well-being for all individuals through education support and
+                advocacy while building safe communities and the mind-body
+                connection between mental and physical health. Our ambitious
+                team focuses on returning each individual to their families,
+                work places, communities, and the activities that they enjoy. We
+                are committed to our employees by providing competitive pay,
+                compensation packages, and comprehensive employee benefits
+                programs.
+              </Text>
+              <Title> CAREER OPPORTUNITIES IN OUR CLINIC</Title>
+              <Text>
+                Whether you are a behavioral healthcare professional or have a
+                background in a healthcare administrative staff role, we have
+                multiple open positions within various departments in our
+                clinic. With our clinic you will have an opportunity to develop
+                your behavioral health career while working closely with
+                talented professionals who are passionate about our work. We
+                have a variety of full-time, part-time, and fee-for-service
+                clinical, medical, and administrative employment opportunities
+                open and we would love to hear from you!
+              </Text>
             </WrapperBlock>
             <Box
               sx={{
@@ -111,9 +132,6 @@ const CareerOpportunities = () => {
                 title="WHO WE ARE"
               />
             </Box>
-          </Block>
-          <Block>
-            <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.836713694201!2d-74.4243125246827!3d40.41246795589985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c5710ac7b9cd%3A0x2a1b05a115f4c381!2s6%20Cornwall%20Ct%20B%2C%20East%20Brunswick%2C%20NJ%2008816!5e0!3m2!1sen!2sus!4v1684616255217!5m2!1sen!2sus"></Iframe>
           </Block>
           <Box sx={{ marginBottom: "65px" }} ref={formRef}>
             <PersonalForm />
