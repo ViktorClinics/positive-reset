@@ -30,7 +30,7 @@ import {
   Address,
 } from "./styled";
 import React, { FC, useEffect, useState } from "react";
-import { Box } from "@mui/material";
+import { Box, Modal } from "@mui/material";
 import axios from "axios";
 import ModalServices from "../../ModalServices/ModalServices";
 import IMGFacebook from "../../../public/facebook-footer.svg";
@@ -43,6 +43,7 @@ import Link from "next/link";
 import { PRIVATE_DATA } from "../../../otherPages/privateData";
 import LogoImg from "../../LogoImg/LogoImg";
 import IMGLocation from "../../../public/icons8-location-50-dark.png";
+import { Iframe } from "../../../otherPages/career/style";
 
 const BASE_MENU = [
   { page: "Home", path: "/" },
@@ -74,6 +75,8 @@ export const Footer: FC = () => {
   const [workingHours, setWorkingHours] = useState<any>();
   const [location, setLocation] = useState<string>("");
   const [linkEmail, setLinkEmail] = useState<string>("");
+  const [googleMap, setGoogleMap] = useState<string>("");
+  const [openModalWindow, setOpenModalWindow] = useState<boolean>(false);
 
   useEffect(() => {
     axios
@@ -117,6 +120,9 @@ export const Footer: FC = () => {
         setEmail(response.data.items[0].fields.email);
         setLocation(response.data.items[0].fields.address);
         setLinkEmail(response.data.items[0].fields.linkEmail);
+        setGoogleMap(
+          response.data.items[0].fields.googleMap.content[0].content[0].value
+        );
       })
       .catch((error) => {
         console.error("Error fetching posts:", error);
@@ -142,6 +148,9 @@ export const Footer: FC = () => {
       )
       .then((response: any) => setWorkingHours(response.data.items));
   }, []);
+
+  const handleOpen = () => setOpenModalWindow(true);
+  const handleClose = () => setOpenModalWindow(false);
 
   return (
     <Container>
@@ -178,7 +187,7 @@ export const Footer: FC = () => {
               <Image src={IMGLocation} width={40} alt="Phone" title="Phone" />
             </WrapperImg>
             <ContactInfo>
-              <Address>{location}</Address>
+              <Address onClick={handleOpen}>{location}</Address>
             </ContactInfo>
           </Contact>
         </Logo>
@@ -274,6 +283,27 @@ export const Footer: FC = () => {
           </Linkedin>
         </Links>
       </Copyright>
+      <Modal
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        open={openModalWindow}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box
+          sx={{
+            width: "100%",
+            maxWidth: "1300px",
+            margin: "0 auto 35px",
+          }}
+        >
+          <Iframe src={googleMap}></Iframe>
+        </Box>
+      </Modal>
     </Container>
   );
 };

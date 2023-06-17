@@ -13,7 +13,7 @@ import {
   Address,
 } from "./styled";
 import React, { FC, useEffect, useState } from "react";
-import { Box } from "@mui/material";
+import { Box, Modal } from "@mui/material";
 import axios from "axios";
 import Image from "next/image";
 import IMGPhoneLogo from "../../../../public/white-mobil.png";
@@ -24,6 +24,7 @@ import IMGLocation from "../../../../public/icons8-location-50.png";
 import { PRIVATE_DATA } from "../../../../otherPages/privateData";
 import LogoImg from "../../../LogoImg/LogoImg";
 import Link from "next/link";
+import { Iframe } from "../../../../otherPages/career/style";
 
 const ID = "positiveresetTelEmailAddress";
 const ID_Links = "positiveresetLinks";
@@ -35,6 +36,8 @@ export const LayoutHeader: FC = () => {
   const [linkFacebook, setLinkFaceBook] = useState<string>("");
   const [linkLinkedin, setLinkLinkedin] = useState<string>("");
   const [linkEmail, setLinkEmail] = useState<string>("");
+  const [googleMap, setGoogleMap] = useState<string>("");
+  const [openModalWindow, setOpenModalWindow] = useState<boolean>(false);
 
   useEffect(() => {
     axios
@@ -46,6 +49,9 @@ export const LayoutHeader: FC = () => {
         setEmail(response.data.items[0].fields.email);
         setLocation(response.data.items[0].fields.address);
         setLinkEmail(response.data.items[0].fields.linkEmail);
+        setGoogleMap(
+          response.data.items[0].fields.googleMap.content[0].content[0].value
+        );
       })
       .catch((error) => {
         console.error("Error fetching posts:", error);
@@ -62,6 +68,9 @@ export const LayoutHeader: FC = () => {
         setLinkLinkedin(response.data.items[0].fields.linkedIn);
       });
   });
+
+  const handleOpen = () => setOpenModalWindow(true);
+  const handleClose = () => setOpenModalWindow(false);
 
   return (
     <Wrapper>
@@ -91,7 +100,7 @@ export const LayoutHeader: FC = () => {
             <Image src={IMGLocation} width={45} alt="Phone" title="Phone" />
           </WrapperImg>
           <ContactInfo>
-            <Address>{location}</Address>
+            <Address onClick={handleOpen}>{location}</Address>
           </ContactInfo>
         </Contact>
         <Follow>
@@ -128,6 +137,27 @@ export const LayoutHeader: FC = () => {
             </WrapperFollow>
           </FollowInfo>
         </Follow>
+        <Modal
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          open={openModalWindow}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box
+            sx={{
+              width: "100%",
+              maxWidth: "1300px",
+              margin: "0 auto 35px",
+            }}
+          >
+            <Iframe src={googleMap}></Iframe>
+          </Box>
+        </Modal>
       </ContactAndFollow>
     </Wrapper>
   );

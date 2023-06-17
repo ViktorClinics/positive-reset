@@ -280,10 +280,16 @@ export const TitleFooter = styled("p")(() => {
 
 export const Address = styled(Box)(() => {
   return {
-    color: "#979797",
+    color: "#fff",
     fontWeight: 600,
     fontSize: 13,
     lineHeight: "18px",
     width: 214,
+    cursor: "pointer",
+    transition: ".3s",
+
+    "&:hover": {
+      color: "#3498db",
+    },
   };
 });

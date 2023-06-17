@@ -44,6 +44,12 @@ export const Address = styled(Box)(() => {
     fontSize: 13,
     lineHeight: "22px",
     width: 180,
+    cursor: "pointer",
+    transition: ".3s",
+
+    "&:hover": {
+      color: "#3498db",
+    },
   };
 });
 
