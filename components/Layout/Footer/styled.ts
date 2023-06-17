@@ -85,13 +85,6 @@ export const Tel = styled(Box)(() => {
   };
 });
 
-export const Email = styled(Box)(() => {
-  return {
-    color: "#b7b7b7",
-    fontSize: 14,
-  };
-});
-
 export const ImgPost = styled("img")(() => {
   return {
     width: 60,
