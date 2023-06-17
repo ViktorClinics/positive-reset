@@ -9,7 +9,7 @@ export const Wrapper = styled(Box)(() => {
     margin: "0 auto",
     padding: "20px 0",
 
-    "@media (max-width: 700px)": {
+    "@media (max-width: 950px)": {
       flexDirection: "column",
       alignItems: "center",
     },
@@ -53,7 +53,7 @@ export const ContactAndFollow = styled(Box)(() => {
     width: "100%",
     alignItems: "center",
 
-    "@media (max-width: 769px)": {
+    "@media (max-width: 950px)": {
       display: "none",
     },
   };
