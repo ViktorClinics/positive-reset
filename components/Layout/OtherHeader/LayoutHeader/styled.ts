@@ -23,16 +23,8 @@ export const ContactInfo = styled(Box)(() => {
 export const Tel = styled(Box)(() => {
   return {
     marginBottom: 6,
-    color: "#555",
-    fontWeight: 600,
-    fontSize: 14,
-  };
-});
-
-export const Email = styled(Box)(() => {
-  return {
     color: "#979797",
-    fontWeight: 400,
+    fontWeight: 600,
     fontSize: 14,
   };
 });

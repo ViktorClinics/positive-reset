@@ -88,7 +88,7 @@ export const LayoutHeader: FC = () => {
           </WrapperImg>
           <ContactInfo>
             <Tel>{telNum}</Tel>
-            <Link id="link" href={linkEmail}>
+            <Link id="link-email" href={linkEmail}>
               {email}
             </Link>
           </ContactInfo>

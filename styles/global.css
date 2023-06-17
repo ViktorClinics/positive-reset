@@ -14,6 +14,20 @@ body {
   color: #555;
 }
 
+#link-email {
+  transition: 0.3s;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #979797;
+}
+
+#link-email:hover {
+  color: #3498db;
+}
+
 #dark-link {
   transition: 0.3s;
   margin-right: 20px;
