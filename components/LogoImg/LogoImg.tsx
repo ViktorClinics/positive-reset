@@ -1,6 +1,6 @@
+import IMGLogoFooter from "../../public/logo.png";
 import Link from "next/link";
 import { Box } from "@mui/material";
-import IMGLogoFooter from "../../public/logo.png";
 import React from "react";
 import Image from "next/image";
 
