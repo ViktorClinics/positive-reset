@@ -149,7 +149,7 @@ export const LayoutHeader: FC = () => {
           <Box
             sx={{
               width: "100%",
-              maxWidth: "1300px",
+              maxWidth: "800px",
               margin: "0 auto 35px",
             }}
           >
