@@ -4,10 +4,11 @@ import {
   WrapperHeader,
   Info,
   Post,
-  TextWithWidth,
   InfoWithWidth,
   TitleWithWidth,
   BoxText,
+  TextWithWidth,
+  Text,
 } from "../otherPages/rates/style";
 
 import Head from "next/head";
@@ -155,18 +156,17 @@ const Rates = () => {
         </Post>
       </Container>
       <Box sx={{ width: "100%", maxWidth: "1120px", margin: "0 auto 35px" }}>
-        <TextWithWidth sx={{ fontSize: 20 }}>
-          *No show or last than 24 hours cancellation fee – $60
+        <Text>
+          * No show or last than 24 hours cancellation fee – $60
           <br />
-          *All service prices shall be disclosed to the patient and agreed by
+          * All service prices shall be disclosed to the patient and agreed by
           patient before the services started.
           <br />
-          *All payments shall be made prior to the services.
+          * All payments shall be made prior to the services.
           <br />
-          *We accept Medicaid, Medicare and all Major medical Insurances.
-          <br />
-          *If the the service has been rendered the payment is final.
-        </TextWithWidth>
+          * We accept Medicaid, Medicare and all Major Medical Insurances.
+          <br />* If the the service has been rendered the payment is final.
+        </Text>
       </Box>
       <Feedbacks />
     </>

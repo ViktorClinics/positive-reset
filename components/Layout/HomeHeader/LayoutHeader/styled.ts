@@ -29,14 +29,6 @@ export const Tel = styled(Box)(() => {
   };
 });
 
-export const Email = styled(Box)(() => {
-  return {
-    color: "white",
-    fontWeight: 400,
-    fontSize: 14,
-  };
-});
-
 export const Address = styled(Box)(() => {
   return {
     color: "white",

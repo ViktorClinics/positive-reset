@@ -158,12 +158,9 @@ export const Footer: FC = () => {
         <Logo>
           <LogoImg />
           <TextLogo>
-            POSITIVE RESET SERVICES is a successful franchise company that opens
-            Mental Health Clinics across Unlined Sates.
-            <br />
-            POSITIVE RESET SERVICES works like a professional system that has
-            stood the test of time, financial success and successful treatment
-            outcomes.
+            If you or someone you know is struggling with depression, PTSD,
+            post-partum, chemical dependency, or any other mental health or
+            addiction concern, please contact us today.
           </TextLogo>
           <Contact>
             <WrapperImg sx={{ marginRight: 3 }}>
@@ -297,7 +294,7 @@ export const Footer: FC = () => {
         <Box
           sx={{
             width: "100%",
-            maxWidth: "1300px",
+            maxWidth: "800px",
             margin: "0 auto 35px",
           }}
         >

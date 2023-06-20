@@ -44,7 +44,7 @@ interface Post {
   link: string;
 }
 
-const ID = "aboutFranchising";
+const ID = "positiveresetAboutFranchising";
 
 export const AboutFranchising: FC = () => {
   const ref = useRef<Slider | null>(null);
